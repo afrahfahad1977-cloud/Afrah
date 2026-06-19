@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>كلية العلوم | المنصة التعريفية</title>
+  <meta name="description" content="منصة تعريفية مبسطة لكلية العلوم تعرض التخصصات ونبذة عن كل تخصص." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="brand-logo">🔬</span>
+        <span class="brand-name">كلية العلوم</span>
+      </div>
+      <nav class="nav">
+        <a href="#home">الرئيسية</a>
+        <a href="#majors">التخصصات</a>
+        <a href="#about">عن الكلية</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <h1>منصة كلية العلوم</h1>
+        <p class="hero-sub">اكتشف تخصصات الكلية ونبذة مختصرة عن كل تخصص ومجالاته.</p>
+        <a href="#majors" class="btn">استعراض التخصصات</a>
+      </div>
+    </section>
+
+    <section id="majors" class="majors">
+      <div class="container">
+        <h2 class="section-title">التخصصات</h2>
+        <p class="section-desc">تضم الكلية مجموعة من التخصصات العلمية الأساسية والتطبيقية.</p>
+
+        <div class="search-bar">
+          <input type="text" id="searchInput" placeholder="ابحث عن تخصص..." aria-label="بحث عن تخصص" />
+        </div>
+
+        <div class="cards" id="cards"><!-- تُملأ ديناميكيًا --></div>
+        <p id="noResults" class="no-results" hidden>لا توجد نتائج مطابقة.</p>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">عن الكلية</h2>
+        <p>
+          تهدف كلية العلوم إلى إعداد كوادر علمية مؤهلة في مختلف المجالات العلمية،
+          من خلال برامج أكاديمية تجمع بين الأساس النظري والتطبيق العملي،
+          وتشجيع البحث العلمي وخدمة المجتمع.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> كلية العلوم — منصة تعريفية مبسطة.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
