@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>كلية العلوم | المنصة التعريفية</title>
+  <meta name="description" content="منصة تعريفية مبسطة لكلية العلوم تعرض التخصصات ونبذة عن كل تخصص." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="brand-logo">🔬</span>
+        <span class="brand-name">كلية العلوم</span>
+      </div>
+      <nav class="nav">
+        <a href="#home">الرئيسية</a>
+        <a href="#majors">التخصصات</a>
+        <a href="#vision">الرؤية والرسالة</a>
+        <a href="#admission">القبول</a>
+        <a href="#contact">اتصل بنا</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <h1>منصة كلية العلوم</h1>
+        <p class="hero-sub">اكتشف تخصصات الكلية ونبذة مختصرة عن كل تخصص ومجالاته.</p>
+        <a href="#majors" class="btn">استعراض التخصصات</a>
+      </div>
+    </section>
+
+    <section id="stats" class="stats">
+      <div class="container stats-grid">
+        <div class="stat"><span class="stat-num">8</span><span class="stat-label">تخصصات</span></div>
+        <div class="stat"><span class="stat-num">+120</span><span class="stat-label">عضو هيئة تدريس</span></div>
+        <div class="stat"><span class="stat-num">+3500</span><span class="stat-label">طالب وطالبة</span></div>
+        <div class="stat"><span class="stat-num">+40</span><span class="stat-label">معمل بحثي</span></div>
+      </div>
+    </section>
+
+    <section id="majors" class="majors">
+      <div class="container">
+        <h2 class="section-title">التخصصات</h2>
+        <p class="section-desc">تضم الكلية مجموعة من التخصصات العلمية الأساسية والتطبيقية. اضغط على أي تخصص لعرض التفاصيل.</p>
+
+        <div class="search-bar">
+          <input type="text" id="searchInput" placeholder="ابحث عن تخصص..." aria-label="بحث عن تخصص" />
+        </div>
+
+        <div class="cards" id="cards"><!-- تُملأ ديناميكيًا --></div>
+        <p id="noResults" class="no-results" hidden>لا توجد نتائج مطابقة.</p>
+      </div>
+    </section>
+
+    <section id="vision" class="vision">
+      <div class="container">
+        <h2 class="section-title">الرؤية والرسالة</h2>
+        <div class="vision-grid">
+          <div class="vision-card">
+            <div class="card-icon">🎯</div>
+            <h3>الرؤية</h3>
+            <p>الريادة والتميز في التعليم والبحث العلمي في مجالات العلوم الأساسية والتطبيقية محليًا وإقليميًا.</p>
+          </div>
+          <div class="vision-card">
+            <div class="card-icon">📜</div>
+            <h3>الرسالة</h3>
+            <p>إعداد كوادر علمية مؤهلة وإنتاج بحوث علمية رصينة تسهم في خدمة المجتمع وتنميته المستدامة.</p>
+          </div>
+          <div class="vision-card">
+            <div class="card-icon">⭐</div>
+            <h3>القيم</h3>
+            <p>الإتقان، النزاهة العلمية، الابتكار، العمل بروح الفريق، والمسؤولية المجتمعية.</p>
+          </div>
+        </div>
+
+        <div class="dean-word">
+          <h3>كلمة العميد</h3>
+          <p>
+            يسعدنا أن نرحّب بكم في كلية العلوم، التي تسعى إلى تقديم بيئة تعليمية وبحثية متميزة
+            تواكب التطورات العلمية وتلبّي احتياجات سوق العمل. نتطلع إلى أن يكون طلابنا قادةً
+            في مجالاتهم، مزوّدين بالمعرفة والمهارات والقيم التي تؤهلهم لخدمة وطنهم ومجتمعهم.
+          </p>
+          <span class="dean-sign">— عميد كلية العلوم</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="admission" class="admission">
+      <div class="container">
+        <h2 class="section-title">القبول والتسجيل</h2>
+        <p class="section-desc">أبرز شروط القبول العامة في برامج كلية العلوم.</p>
+        <ul class="admission-list">
+          <li>الحصول على شهادة الثانوية العامة (القسم العلمي) أو ما يعادلها.</li>
+          <li>ألا يكون قد مضى على الحصول على الثانوية أكثر من المدة المحددة باللائحة.</li>
+          <li>اجتياز اختبارات القبول والقدرات والتحصيلي وفق المعايير المعتمدة.</li>
+          <li>اجتياز المقابلة الشخصية والفحص الطبي إن وُجد.</li>
+          <li>استيفاء النسبة الموزونة المطلوبة للتخصص المرغوب.</li>
+        </ul>
+        <a href="#contact" class="btn btn-dark">تواصل مع وحدة القبول</a>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">اتصل بنا</h2>
+        <div class="contact-grid">
+          <div class="contact-item"><span class="contact-icon">📍</span><div><strong>العنوان</strong><p>مبنى كلية العلوم، المدينة الجامعية</p></div></div>
+          <div class="contact-item"><span class="contact-icon">📞</span><div><strong>الهاتف</strong><p dir="ltr">+966 11 000 0000</p></div></div>
+          <div class="contact-item"><span class="contact-icon">✉️</span><div><strong>البريد الإلكتروني</strong><p dir="ltr">science@university.edu</p></div></div>
+          <div class="contact-item"><span class="contact-icon">🕐</span><div><strong>أوقات العمل</strong><p>الأحد – الخميس، 8 ص – 3 م</p></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> كلية العلوم — منصة تعريفية مبسطة.</p>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
